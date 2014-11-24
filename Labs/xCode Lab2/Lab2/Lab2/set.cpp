@@ -211,11 +211,14 @@ void Set::deleteNode(int value)
     {
         while(listPtr->next)
         {
-            delete listPtr->next;
-            listPtr->next = listPtr->next->next;
-            break;
+            if(listPtr->next->value == value)
+            {
+                delete listPtr->next;
+                listPtr->next = listPtr->next->next;
+                break;
+            }
+            listPtr = listPtr->next;
         }
-        listPtr = listPtr->next;
     }
 }
 

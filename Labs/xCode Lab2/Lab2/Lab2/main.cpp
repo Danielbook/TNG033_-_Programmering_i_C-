@@ -94,7 +94,7 @@ int main()
     * Operator overloading: inserting and deleting       *
     ******************************************************/
     cout << "\nTEST PHASE 6: insertion, deletion\n" << endl;
-
+    
     S4 = S1 + 4 - 5 - 99999;
     S5 = S2 - 2 + 1 - 99999;
 
