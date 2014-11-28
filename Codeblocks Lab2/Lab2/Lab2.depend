@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1417120110 source:h:\tng033_-_programmering_i_c--master\labs\codeblocks lab2\lab2\node.cpp
+	"node.h"
+
+1417120110 h:\tng033_-_programmering_i_c--master\labs\codeblocks lab2\lab2\node.h
+	<iostream>
+
+1417120110 source:h:\tng033_-_programmering_i_c--master\labs\codeblocks lab2\lab2\set.cpp
+	"set.h"
+
+1417120110 h:\tng033_-_programmering_i_c--master\labs\codeblocks lab2\lab2\set.h
+	"node.h"
+
+1417159497 source:h:\tng033_-_programmering_i_c--master\labs\codeblocks lab2\lab2\main.cpp
+	<iostream>
+	<iomanip>
+	"set.h"
+
