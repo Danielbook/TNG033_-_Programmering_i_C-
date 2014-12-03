@@ -7,4 +7,13 @@
 
 
 //ADD implementation of the member functions for class Expression
+operator() (double d){
+    
+}
 
+bool isRoot(double v){
+    
+}
+operator<<(){
+    
+}

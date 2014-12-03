@@ -20,7 +20,8 @@ public:
     
     void play(string note) const
     {
-        
+        cout << "Instrument::play with "
+        << "tune " << note << endl;
     };
     
 protected:
