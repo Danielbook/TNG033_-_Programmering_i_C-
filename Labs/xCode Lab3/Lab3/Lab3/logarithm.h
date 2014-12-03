@@ -15,21 +15,23 @@ using namespace std;
 
 class Log : public Expression{
 public:
-    Log(Expression *E, double c1, double c2, int b){
-        base = b;
-        k1 = c1;
-        k2 = c2;
-                
-        exp = E->clone();
-    }
+////CONSTRUCTORS
+    Log(); //Default constructor
+    Log(const Expression& E, const double c1, const double c2, const int b); //Standrard constructor
+    Log(Log& L); //Copy constructor
+    ~Log(); //Destructor
+
+////OPERATORS
+    double operator()(double d) const;
     
-    /*virtual*/ Log* clone();
-    
-    
-private:
-    double k1, k2;
-    int base;
-    Expression *exp;
+////FUNCTIONS
+    Log* clone() const;
+    void print(ostream& os) const;
+
+protected:
+    double k1, k2; //Constants
+    int base; //Base of logarithm
+    Expression *exp; //Expression inside logarithm
 };
 
 #endif

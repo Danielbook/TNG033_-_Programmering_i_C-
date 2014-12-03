@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65D7F80E1A2E5B300030E052 /* expression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D7F8061A2E5B300030E052 /* expression.cpp */; };
-		65D7F80F1A2E5B300030E052 /* logarithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D7F8081A2E5B300030E052 /* logarithm.cpp */; };
-		65D7F8101A2E5B300030E052 /* polynomial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D7F80B1A2E5B300030E052 /* polynomial.cpp */; };
-		65D7F8111A2E5B300030E052 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D7F80D1A2E5B300030E052 /* test.cpp */; };
+		653662B11A2F72AF008241C0 /* expression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653662A91A2F72AF008241C0 /* expression.cpp */; };
+		653662B21A2F72AF008241C0 /* logarithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653662AB1A2F72AF008241C0 /* logarithm.cpp */; };
+		653662B31A2F72AF008241C0 /* polynomial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653662AE1A2F72AF008241C0 /* polynomial.cpp */; };
+		653662B41A2F72AF008241C0 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653662B01A2F72AF008241C0 /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,15 +26,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		653662A91A2F72AF008241C0 /* expression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = expression.cpp; sourceTree = "<group>"; };
+		653662AA1A2F72AF008241C0 /* expression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expression.h; sourceTree = "<group>"; };
+		653662AB1A2F72AF008241C0 /* logarithm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logarithm.cpp; sourceTree = "<group>"; };
+		653662AC1A2F72AF008241C0 /* logarithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logarithm.h; sourceTree = "<group>"; };
+		653662AD1A2F72AF008241C0 /* out3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = out3.txt; sourceTree = "<group>"; };
+		653662AE1A2F72AF008241C0 /* polynomial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polynomial.cpp; sourceTree = "<group>"; };
+		653662AF1A2F72AF008241C0 /* polynomial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polynomial.h; sourceTree = "<group>"; };
+		653662B01A2F72AF008241C0 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		65D7F7FC1A2E5ABE0030E052 /* Lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab3; sourceTree = BUILT_PRODUCTS_DIR; };
-		65D7F8061A2E5B300030E052 /* expression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = expression.cpp; sourceTree = "<group>"; };
-		65D7F8071A2E5B300030E052 /* expression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expression.h; sourceTree = "<group>"; };
-		65D7F8081A2E5B300030E052 /* logarithm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logarithm.cpp; sourceTree = "<group>"; };
-		65D7F8091A2E5B300030E052 /* logarithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logarithm.h; sourceTree = "<group>"; };
-		65D7F80A1A2E5B300030E052 /* out3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = out3.txt; sourceTree = "<group>"; };
-		65D7F80B1A2E5B300030E052 /* polynomial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = polynomial.cpp; sourceTree = "<group>"; };
-		65D7F80C1A2E5B300030E052 /* polynomial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polynomial.h; sourceTree = "<group>"; };
-		65D7F80D1A2E5B300030E052 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +67,14 @@
 		65D7F7FE1A2E5ABE0030E052 /* Lab3 */ = {
 			isa = PBXGroup;
 			children = (
-				65D7F8061A2E5B300030E052 /* expression.cpp */,
-				65D7F8071A2E5B300030E052 /* expression.h */,
-				65D7F8081A2E5B300030E052 /* logarithm.cpp */,
-				65D7F8091A2E5B300030E052 /* logarithm.h */,
-				65D7F80A1A2E5B300030E052 /* out3.txt */,
-				65D7F80B1A2E5B300030E052 /* polynomial.cpp */,
-				65D7F80C1A2E5B300030E052 /* polynomial.h */,
-				65D7F80D1A2E5B300030E052 /* test.cpp */,
+				653662A91A2F72AF008241C0 /* expression.cpp */,
+				653662AA1A2F72AF008241C0 /* expression.h */,
+				653662AB1A2F72AF008241C0 /* logarithm.cpp */,
+				653662AC1A2F72AF008241C0 /* logarithm.h */,
+				653662AD1A2F72AF008241C0 /* out3.txt */,
+				653662AE1A2F72AF008241C0 /* polynomial.cpp */,
+				653662AF1A2F72AF008241C0 /* polynomial.h */,
+				653662B01A2F72AF008241C0 /* test.cpp */,
 			);
 			path = Lab3;
 			sourceTree = "<group>";
@@ -135,10 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D7F80E1A2E5B300030E052 /* expression.cpp in Sources */,
-				65D7F8111A2E5B300030E052 /* test.cpp in Sources */,
-				65D7F8101A2E5B300030E052 /* polynomial.cpp in Sources */,
-				65D7F80F1A2E5B300030E052 /* logarithm.cpp in Sources */,
+				653662B11A2F72AF008241C0 /* expression.cpp in Sources */,
+				653662B41A2F72AF008241C0 /* test.cpp in Sources */,
+				653662B31A2F72AF008241C0 /* polynomial.cpp in Sources */,
+				653662B21A2F72AF008241C0 /* logarithm.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +252,7 @@
 				65D7F8051A2E5ABE0030E052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,25 +12,25 @@ using namespace std;
 
 const double EPSILON = 1.0e-5;
 
-
-class Expression{
+class Expression
+{
 public:
     //Abstract destructor
-    virtual ~Expression(){  };
+    virtual ~Expression(){};
+
+    //Test if root
+    bool isRoot(double d) const;
+
+    friend ostream& operator<<(ostream& os, const Expression& E);
+
+    //Return a clone of the Expression
+    virtual Expression* clone() const = 0;
     
     //Evaluate
     virtual double operator()(double d) const = 0;
-    
-    //Test if root
-    bool isRoot(double d) const;
-    
-    friend ostream& operator<<(ostream& os, const Expression& E);
-    
-    //Return a clone of the Expression
-    virtual Expression* clone() = 0;
 
 protected:
-    virtual void display(ostream &os) = 0;
+    virtual void print(ostream &os) const = 0;
 };
 
 #endif

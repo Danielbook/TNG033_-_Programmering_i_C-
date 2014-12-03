@@ -4,16 +4,18 @@
 **********************************************************/
 
 #include "expression.h"
+#include <cmath>
 
+using namespace std;
 
-//ADD implementation of the member functions for class Expression
-operator() (double d){
-    
+bool Expression::isRoot(double v) const
+{
+    const double EPSILON = 1.0e-5;
+    return(fabs( (*this)(v) - 0.0) < EPSILON);
 }
 
-bool isRoot(double v){
-    
-}
-operator<<(){
-    
+ostream& operator<<(ostream& os, const Expression& E)
+{
+    E.print(os); //Call print function in subclasses
+    return os;
 }

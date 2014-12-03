@@ -167,46 +167,46 @@ int main()
     cout << "l1(1) = " << l1(1) << endl;
     cout << "l3(1) = " << l3(1) << endl;
 
-    /*****************************************************
-    * TEST PHASE 10                                      *
-    * Logarithm: isRoot                                  *
-    ******************************************************/
-    cout << "\nTEST PHASE 10\n";
-
-    const Log l4;
-
-    if (l4.isRoot(1))
-        cout << "One is a root of " << l4 << endl;
-    else
-        cout << "One is not a root of " << l4 << endl;
-
-
-    /*****************************************************
-    * TEST PHASE 11                                      *
-    * Expressions: dynamic binding                       *
-    ******************************************************/
-    cout << "\nTEST PHASE 11\n";
-
-    Polynomial p6(p4);
-    Polynomial p7(p2);
-
-    Expression *E[4] = {&p6, &l1, &p7, &l0};
-
-    cout << "** evaluate " << endl;
-    for(int i = 0; i < 4; i++)
-    {
-        cout << "(" << *E[i] << ")"
-             << "(1) = " << (*E[i])(1) << endl;
-    }
-
-    cout << "\n** isRoot " << endl;
-    for(int i = 0; i < 4; i++)
-    {
-        if (E[i]->isRoot(1))
-            cout << "1 is a root of " << *E[i] << endl;
-        else
-            cout << "1 is not a root of " << *E[i] << endl;
-    }
+//    /*****************************************************
+//    * TEST PHASE 10                                      *
+//    * Logarithm: isRoot                                  *
+//    ******************************************************/
+//    cout << "\nTEST PHASE 10\n";
+//
+//    const Log l4;
+//
+//    if (l4.isRoot(1))
+//        cout << "One is a root of " << l4 << endl;
+//    else
+//        cout << "One is not a root of " << l4 << endl;
+//
+//
+//    /*****************************************************
+//    * TEST PHASE 11                                      *
+//    * Expressions: dynamic binding                       *
+//    ******************************************************/
+//    cout << "\nTEST PHASE 11\n";
+//
+//    Polynomial p6(p4);
+//    Polynomial p7(p2);
+//
+//    Expression *E[4] = {&p6, &l1, &p7, &l0};
+//
+//    cout << "** evaluate " << endl;
+//    for(int i = 0; i < 4; i++)
+//    {
+//        cout << "(" << *E[i] << ")"
+//             << "(1) = " << (*E[i])(1) << endl;
+//    }
+//
+//    cout << "\n** isRoot " << endl;
+//    for(int i = 0; i < 4; i++)
+//    {
+//        if (E[i]->isRoot(1))
+//            cout << "1 is a root of " << *E[i] << endl;
+//        else
+//            cout << "1 is not a root of " << *E[i] << endl;
+//    }
 
 
     return 0;

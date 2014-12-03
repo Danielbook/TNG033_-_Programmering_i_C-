@@ -15,29 +15,26 @@ using namespace std;
 
 class Polynomial : public Expression{
 public:
-    
-    //Constructors
+////CONSTRUCTORS
+    Polynomial(); //Default constructor, måste vara med, annars är klassen abstract!
     Polynomial(int d, double *C);
-
     Polynomial(double d);
+    Polynomial(const Polynomial& P); //Copy constructor
+    ~Polynomial(); //Destructor
+
+////OPERATORS
+    const Polynomial& operator=(const Polynomial P); //Assignment operator
+    double operator()(double d) const; //Evaluate operator
+    friend Polynomial operator+(const Polynomial& P1, const Polynomial& P2); //Operator +
+    double& operator[](const int index); //Operator[]
     
-    //Copy constructor
+////FUNCTIONS
+    Polynomial* clone() const; //Clone function
+    void print(ostream &os)const; //Print function
     
-    //Destructor
-    
-    //Assignment
-    
-    friend Polynomial operator+(const Polynomial& P1, const Polynomial& P2);
-    
-    //operator[] coefficient...
-    
-    virtual Polynomial* clone();
-        
 protected:
-    int degree;
+    int degree; //Degree of expression
     double* coef; //Array of coefficients
-    
-    void display(ostream &os);
 };
 
 
