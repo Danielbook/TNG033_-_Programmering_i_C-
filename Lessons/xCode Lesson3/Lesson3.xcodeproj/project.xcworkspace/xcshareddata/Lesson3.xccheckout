@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6A61569B-C386-4DE4-A5A4-0ECDE4E81242</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lesson3</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>78BED796709588C628A295B285A99EC0948E1412</key>
+		<string>https://github.com/Danielbook/TNG033---Programmering-i-C-.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lessons/xCode Lesson3/Lesson3.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>78BED796709588C628A295B285A99EC0948E1412</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Danielbook/TNG033---Programmering-i-C-.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>78BED796709588C628A295B285A99EC0948E1412</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>78BED796709588C628A295B285A99EC0948E1412</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TNG033-Programmering_i_C++</string>
+		</dict>
+	</array>
+</dict>
+</plist>
