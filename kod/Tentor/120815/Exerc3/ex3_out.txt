@@ -1,0 +1,20 @@
+MoonX belongs to Hearth
+Population of MoonX is 0.
+
+
+Other CELESTIAL BODIES...
+
+Star Helios from galaxy Milky Way.
+
+
+Planet Hearth belongs to Helios and it is  populated.
+
+
+Planet Moon belongs to Hearth and it is not  populated.
+
+
+Number of celestial bodies: 4
+
+Deleting some celestial bodies ...
+
+Number of celestial bodies: 1

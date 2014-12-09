@@ -10,8 +10,11 @@ using namespace std;
 
 bool Expression::isRoot(double v) const
 {
-    const double EPSILON = 1.0e-5;
-    return(fabs( (*this)(v) - 0.0) < EPSILON);
+    if(fabs( (*this)(v) ) < EPSILON)
+    {
+        return true;
+    }
+    return false;
 }
 
 ostream& operator<<(ostream& os, const Expression& E)

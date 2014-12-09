@@ -1,0 +1,4 @@
+Lektion
+1.	Läsa vektorer, visa längd på dessa, sortera.
+2.	Matriser
+3.	algoritmer å skit

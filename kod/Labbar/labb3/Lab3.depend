@@ -1,0 +1,374 @@
+# depslib dependency file v1.0
+1385133038 source:h:\mt2a_2013\tng033\lab\lab3\lab3\expression.cpp
+	"expression.h"
+
+1385712964 h:\mt2a_2013\tng033\lab\lab3\lab3\expression.h
+	<iostream>
+
+1385133332 source:h:\mt2a_2013\tng033\lab\lab3\lab3\logarithm.cpp
+	"logarithm.h"
+
+1385714408 h:\mt2a_2013\tng033\lab\lab3\lab3\logarithm.h
+	<iostream>
+	"expression.h"
+
+1385712185 source:h:\mt2a_2013\tng033\lab\lab3\lab3\polynomial.cpp
+	"polynomial.h"
+
+1385713715 h:\mt2a_2013\tng033\lab\lab3\lab3\polynomial.h
+	<iostream>
+	"expression.h"
+
+1385713861 source:h:\mt2a_2013\tng033\lab\lab3\lab3\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1385133332 source:c:\users\nora\desktop\tng033\lab3\logarithm.cpp
+	"logarithm.h"
+
+1385714410 c:\users\nora\desktop\tng033\lab3\logarithm.h
+	<iostream>
+	"expression.h"
+
+1385925115 c:\users\nora\desktop\tng033\lab3\expression.h
+	<iostream>
+	<string>
+
+1385713862 source:c:\users\nora\desktop\tng033\lab3\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1385926290 c:\users\nora\desktop\tng033\lab3\polynomial.h
+	<iostream>
+	"expression.h"
+
+1385924426 source:c:\users\nora\desktop\tng033\lab3\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1385133332 source:h:\tng033 programming in c++\lab3 nora\logarithm.cpp
+	"logarithm.h"
+
+1385714410 h:\tng033 programming in c++\lab3 nora\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386088310 h:\tng033 programming in c++\lab3 nora\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386088957 source:h:\tng033 programming in c++\lab3 nora\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386093570 h:\tng033 programming in c++\lab3 nora\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386065463 source:h:\tng033 programming in c++\lab3 nora\expression.cpp
+	<iostream>
+	<math.h>
+
+1386093189 source:h:\tng033 programming in c++\lab3 nora\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386065464 source:d:\tng033\lab3 3_12\expression.cpp
+	<iostream>
+	<math.h>
+
+1385133332 source:d:\tng033\lab3 3_12\logarithm.cpp
+	"logarithm.h"
+
+1385714410 d:\tng033\lab3 3_12\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386088312 d:\tng033\lab3 3_12\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386088958 source:d:\tng033\lab3 3_12\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386093572 d:\tng033\lab3 3_12\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386065464 source:h:\mt2a_2013\tng033\lab\lab3 3_12\expression.cpp
+	<iostream>
+	<math.h>
+
+1385133332 source:h:\mt2a_2013\tng033\lab\lab3 3_12\logarithm.cpp
+	"logarithm.h"
+
+1385714410 h:\mt2a_2013\tng033\lab\lab3 3_12\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386088312 h:\mt2a_2013\tng033\lab\lab3 3_12\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386094166 source:h:\mt2a_2013\tng033\lab\lab3 3_12\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386168197 h:\mt2a_2013\tng033\lab\lab3 3_12\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386088958 source:h:\mt2a_2013\tng033\lab\lab3 3_12\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386258978 source:f:\lab3 4_12\expression.cpp
+	<math.h>
+	"expression.h"
+
+1386257660 source:f:\lab3 4_12\logarithm.cpp
+	"logarithm.h"
+	"math.h"
+
+1386259240 f:\lab3 4_12\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386257864 f:\lab3 4_12\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386257660 source:f:\lab3 4_12\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386257660 f:\lab3 4_12\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386088958 source:f:\lab3 4_12\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386319816 source:f:\lab3 5_12\expression.cpp
+	<math.h>
+	"expression.h"
+
+1386321428 f:\lab3 5_12\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386321458 source:f:\lab3 5_12\logarithm.cpp
+	"logarithm.h"
+	"polynomial.h"
+	"math.h"
+
+1386321402 f:\lab3 5_12\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386320414 source:f:\lab3 5_12\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386321318 f:\lab3 5_12\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386259240 source:f:\lab3 5_12\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386259240 source:h:\lab3 5_12\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386577178 h:\lab3 5_12\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386577160 h:\lab3 5_12\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386577183 h:\lab3 5_12\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386574401 source:h:\lab3 5_12\expression.cpp
+	<math.h>
+	"expression.h"
+
+1386577201 source:h:\lab3 5_12\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386577196 source:h:\lab3 5_12\logarithm.cpp
+	"logarithm.h"
+	"polynomial.h"
+	"math.h"
+
+1386578010 source:e:\dropbox\projekt\c++\lab3\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386578776 e:\dropbox\projekt\c++\lab3\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386577162 e:\dropbox\projekt\c++\lab3\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386719267 source:c:\users\sprazer\desktop\lab3\logarithm.cpp
+	"logarithm.h"
+	"polynomial.h"
+	"math.h"
+
+1386721624 c:\users\sprazer\desktop\lab3\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386577162 c:\users\sprazer\desktop\lab3\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386721430 c:\users\sprazer\desktop\lab3\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386721432 source:c:\users\sprazer\desktop\lab3\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386578828 source:c:\users\sprazer\desktop\lab3\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386578804 source:c:\users\sprazer\desktop\lab3\expression.cpp
+	<math.h>
+	"expression.h"
+
+1386834499 source:c:\users\ramas008\desktop\lab 3\expression.cpp
+	<math.h>
+	"expression.h"
+
+1386834500 c:\users\ramas008\desktop\lab 3\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386836172 source:c:\users\ramas008\desktop\lab 3\logarithm.cpp
+	"logarithm.h"
+	"polynomial.h"
+	"math.h"
+
+1386834500 c:\users\ramas008\desktop\lab 3\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386834500 c:\users\ramas008\desktop\lab 3\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386835583 source:c:\users\ramas008\desktop\lab 3\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386834801 source:c:\users\ramas008\desktop\lab 3\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386844786 source:h:\tng033 c++2\labs\labben 3- klart\expression.cpp
+	<math.h>
+	"expression.h"
+
+1386844786 h:\tng033 c++2\labs\labben 3- klart\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386844786 source:h:\tng033 c++2\labs\labben 3- klart\logarithm.cpp
+	"logarithm.h"
+	"polynomial.h"
+	"math.h"
+
+1386844785 h:\tng033 c++2\labs\labben 3- klart\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386844785 h:\tng033 c++2\labs\labben 3- klart\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386844785 source:h:\tng033 c++2\labs\labben 3- klart\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386834802 source:h:\tng033 c++2\labs\labben 3- klart\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386844786 source:h:\tng033\labb3\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386844786 h:\tng033\labb3\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386844788 h:\tng033\labb3\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386834802 source:h:\tng033\labb3\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+
+1386844786 h:\tng033\labb3\logarithm.h
+	<iostream>
+	"expression.h"
+
+1387275934 source:h:\tng033\labb3\logarithm.cpp
+	"logarithm.h"
+	"polynomial.h"
+	"math.h"
+
+1387297629 source:h:\tng033\labb3\expression.cpp
+	<math.h>
+	"expression.h"
+

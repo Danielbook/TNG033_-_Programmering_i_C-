@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1387194964 source:h:\tng033\labb4\labb4u2\uppgift2.cpp
+	<fstream>
+	<algorithm>
+	<map>
+	<string>
+	<vector>
+	<utility>
+

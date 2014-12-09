@@ -1,0 +1,17 @@
+***Phase 0
+
+***Phase 1
+
+List L1: The list is empty!!
+List L2: 6 6 6 6
+List L3: 2
+List L4: 3 3
+
+***Phase 2
+
+L1 + L2: 6 6 6 6
+L2 + L3 + L4: 2 3 3 6 6 6 6
+L4 + 2: 2 3 3
+3 + L4: 3 3 3
+List L6: 3 3 6 6 6 6 8
+6 + L6: 3 3 6 6 6 6 6 8

@@ -1,0 +1,22 @@
+List L1: The list is empty!!
+
+List L2: The list is empty!!
+
+List L3: 3 
+
+List L4: 4 
+
+List L5: 5 
+
+List L6: 6 
+
+List L1+L2: The list is empty!!
+
+List L3+L4+L5+L6: 3 4 5 6 
+
+List L1+L3: 3 4 5 6 
+
+List L3+L2: 3 4 5 6 
+
+Self-appending L3+L3: 3 4 5 6 3 4 5 6 
+

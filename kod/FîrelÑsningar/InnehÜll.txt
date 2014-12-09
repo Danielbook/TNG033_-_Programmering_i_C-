@@ -1,0 +1,15 @@
+Föreläsning:
+1.	Matriser
+2.	Overload på operatorer. Streams och textfiler
+3.	Pointers. C-strings
+4.	Memory Allocation. Dumma fel
+5.	Dynamiska strukturer, enkellänkade
+6.	Referenser. Pointers till funktioner. Typedef
+7.	konstruktors
+8.	Konstanta saker. This. Tilldelningsop. . Friends
+9.	Overload på operatioer, constant.
+10.	Inheritance: klasser och härledda klasser
+11.	Polymorphism, dynamisk bindning. Abstrakta klasser virtuella grejer
+12.	Introduktion till templates. 
+13.	Standard temps
+14.	Files and streams. Binära filer

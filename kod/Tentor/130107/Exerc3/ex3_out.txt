@@ -1,0 +1,35 @@
+** All characters talk...
+TinTin: Hej! I am TinTin
+TinTin: I have 0 friends!
+Golan: Hej! I am Golan
+Simpson: Hej! I am Simpson
+Donald: Hej! I am Donald
+Donald: I have 0 friends!
+
+** Tintin gets friends...
+TinTin: Hej! I am TinTin
+TinTin: I have 3 friends!
+TinTin's friends ...
+Golan: Hej! I am Golan
+Simpson: Hej! I am Simpson
+Donald: Hej! I am Donald
+Donald: I have 0 friends!
+
+** Donald gets a friend...
+TinTin: Hej! I am TinTin
+TinTin: I have 3 friends!
+TinTin's friends ...
+Golan: Hej! I am Golan
+Simpson: Hej! I am Simpson
+Donald: Hej! I am Donald
+Donald: I have 1 friends!
+Donald's friends ...
+Golan: Hej! I am Golan
+
+There are 3 characters without friends!!
+
+** Donald looses his friend...
+
+There are 4 characters without friends!!
+
+Garfiled is shy!!

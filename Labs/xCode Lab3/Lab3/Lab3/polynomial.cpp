@@ -78,9 +78,9 @@
     double Polynomial::operator()(double d) const
     {
         double sum = 0;
-        for(int i = 0; i <= this->degree; i++)
+        for(int i = 0; i <= degree; i++)
         {
-            sum += this->coef[i] * pow(d,i);
+            sum += coef[i] * pow(d,i);
         }
         return sum;
     }
@@ -106,15 +106,12 @@
         
         for(int i = 0; i <= newDegree; i++)
         {
-            newCoef[i] = 0; //undvik skräpvärden
+            newCoef[i] = 0;
             
             //plussar ihop
-            if (i <= P1.degree)
-                newCoef[i] += P1.coef[i];
+            if (i <= P1.degree){ newCoef[i] += P1.coef[i]; }
             
-            if (i <= P2.degree)
-                newCoef[i] += P2.coef[i];
-            
+            if (i <= P2.degree){ newCoef[i] += P2.coef[i]; }
         }
         return Polynomial(newDegree, newCoef);
     }
@@ -138,8 +135,7 @@
                 {
                     if(coef[i] > 0)
                     {
-                        
-                        os << " + " << coef[i] << " * x^"<< i;
+                        os << fixed << setprecision(2) << " + " << coef[i] << " * x^"<< i;
                     }
                 }
                 

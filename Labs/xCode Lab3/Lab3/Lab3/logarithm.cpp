@@ -6,14 +6,16 @@
 #include "logarithm.h"
 #include "polynomial.h"
 #include "math.h"
+#include <iomanip>
 
 using namespace std;
 
 ////CONSTRUCTORS
     //Default constructor
-    Log::Log(){
-        k1 = 1;
-        k2 = 0;
+    Log::Log()
+    {
+        k1 = 0;
+        k2 = 1;
         base = 2; //Smallest logarithm
         double coef[2] = {0, 1}; // = x
         exp = new Polynomial(1, coef); //New poly with degree 1 --> x
@@ -39,15 +41,14 @@ using namespace std;
 
     //DESTRUCTOR
     Log::~Log(){
-        
     }
-////OPERATORS
 
+////OPERATORS
     double Log::operator()(double d) const
     {
-        double sum = 0;
+        double sum;
         
-        sum = k1 *( log10( (*this)(d) ) / log10(base) ) + k2;
+        sum = k2 * ( log10( (*exp)(d) ) / log10(base) ) + k1;
         
         return sum;
     }
@@ -63,7 +64,7 @@ using namespace std;
     //Print function
     void Log::print(ostream &os) const
     {
-        os << k1 << " + " << k2 << " * Log_ " << base << "( " << *exp << " )" ;
+        os << fixed << setprecision(2) << k1 << " + " << k2 << " * Log_ " << base << "( " << *exp << " )" ;
     }
 
 
