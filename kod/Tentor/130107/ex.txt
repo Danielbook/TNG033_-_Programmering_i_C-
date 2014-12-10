@@ -1,0 +1,11 @@
+Ex1:
+Klass med lista med nodes som lagrar ints. Repeterade världen. Osorterad.
+Lägg till klasser för att avgöra hur den är sorterad, och för att något annat
+
+Ex2:
+Läs in textfil med info om filmer. STANDARD TEMPLATE LIBRARY. Algorithmer.
+
+Ex3:
+Klasshierarkier
+
+Ex4

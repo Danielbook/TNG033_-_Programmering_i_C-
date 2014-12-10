@@ -1,0 +1,45 @@
+Customer 1 has credit limit 200
+
+Customer 2 has credit limit 200
+
+Customer 3 has credit limit 100
+
+Customer 1 should pay 51
+
+Customer 2 should pay 42
+
+Customer 3 should pay 55.65
+
+Update customer 3 debt not possible!!
+
+Customer 4 has credit limit 400 and should pay 0
+Customer 5 has credit limit 80 and should pay 0
+
+
+INVOICES
+
+Invoice for customer: 1
+======================================
+Amount to pay: 51.00 sek
+======================================
+
+
+Invoice for customer: 2
+======================================
+Debt: 52.00 sek
+Discount offered: 50.00 sek
+Amount to pay: 2.00 sek
+======================================
+
+
+Invoice for customer: 3
+======================================
+Debt: 53.00 sek
+Interest rate: 15%
+Interest to pay: 7.95
+Amount to pay: 60.95 sek
+======================================
+
+
+Max discount offered to a customer: 50.00
+Max interest rate: 15

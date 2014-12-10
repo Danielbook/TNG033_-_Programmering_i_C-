@@ -1,0 +1,82 @@
+***PHASE 0
+
+Adding some employees ...
+Number of employees: 3
+
+Adding some more employees ...
+
+Number of employees: 6
+
+Name: M1
+Id: 1
+Salary: 55000
+Position: manager
+Group managed: 2 3 4 5 6
+
+Name: P2
+Id: 2
+Salary: 42000
+Position: programmer
+Programming language: Java
+
+Name: P3
+Id: 3
+Salary: 35000
+Position: programmer
+Programming language: C++
+
+Name: P4
+Id: 4
+Salary: 42000
+Position: programmer
+Programming language: C++
+
+Name: P5
+Id: 5
+Salary: 150000
+Position: programmer
+Programming language: Javascript
+
+Name: M6
+Id: 6
+Salary: 55000
+Position: manager
+Group managed: 5 4
+
+***PHASE 1
+
+Employee 5 quits ...
+
+Number of employees: 5
+
+Name: M1
+Id: 1
+Salary: 55000
+Position: manager
+Group managed: 2 3 4 6
+
+Name: M6
+Id: 6
+Salary: 55000
+Position: manager
+Group managed: 4
+
+Manager with id 6 has a group of 1 person(s).
+
+***PHASE 2
+
+Manager 6 quits ...
+
+Number of employees: 4
+
+Name: M1
+Id: 1
+Salary: 55000
+Position: manager
+Group managed: 2 3 4
+
+
+***PHASE 3
+
+Enter an employee id: 6
+Employee not found!!

@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1386844788 source:h:\tng033\labb3\logarithm.cpp
+	"logarithm.h"
+	"polynomial.h"
+	"math.h"
+
+1386844786 h:\tng033\labb3\logarithm.h
+	<iostream>
+	"expression.h"
+
+1386844788 h:\tng033\labb3\expression.h
+	<iostream>
+	<string>
+	<assert.h>
+
+1386844786 h:\tng033\labb3\polynomial.h
+	<iostream>
+	"expression.h"
+
+1386844786 source:h:\tng033\labb3\polynomial.cpp
+	"polynomial.h"
+	"math.h"
+
+1386834802 source:h:\tng033\labb3\test.cpp
+	<iostream>
+	<iomanip>
+	"polynomial.h"
+	"logarithm.h"
+

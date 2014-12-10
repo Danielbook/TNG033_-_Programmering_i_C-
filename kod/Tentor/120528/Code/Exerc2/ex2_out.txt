@@ -1,0 +1,14 @@
+Number of values read: 10
+
+Values in increasing order
+0 1 2 3 4 20 21 22 23 24 
+
+Values in decreasing order
+24 23 22 21 20 4 3 2 1 0 
+
+Congruence test succeeded!!
+
+Values in vector vec2
+0 1 2 3 4 20 20 20 20 20 
+
+Congruence test failed!!

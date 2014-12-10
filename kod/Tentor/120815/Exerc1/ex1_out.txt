@@ -1,0 +1,10 @@
+List L1: The list is empty!!
+List L2: 1 4 5 1 4 
+List L3: 8 8 8 8 
+Value 3 not repeated in list L1.
+
+List L1 after deleting repeated 3s: The list is empty!!
+List L2 after deleting repeated 0s: 1 4 5 1 4 
+List L2 after deleting repeated 1s: 1 4 5 4 
+List L2 after deleting repeated 4s: 1 4 5 
+List L3 after deleting repeated 8s: 8 

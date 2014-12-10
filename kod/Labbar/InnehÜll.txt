@@ -1,0 +1,5 @@
+Lab
+2.	dynamiska strukturer, pointers, dynamiskt minne, klasser, overloaded operators
+3.	Klasser, hierarkier, abstrakta klasser
+4.	Containerklasser, iteratorer, algoritmer, String som containerklass
+5.	Binära filer

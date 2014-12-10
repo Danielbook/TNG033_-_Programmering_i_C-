@@ -1,0 +1,5 @@
+Ex1:
+Läs och sortera 100 ints till en 10x10 matris fylld genom linje. Kolla symmetri.
+
+Ex2:
+Klass med sorterade ints. Dubbla värden existerar. En node med antal repetitioner. 

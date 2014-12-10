@@ -1,0 +1,7 @@
+Extracts characters from is and stores them into str until a delimitation character is found.
+The delimiter character is delim for the first function version, 
+and '\n' (newline character) for the second. The extraction also stops if the end of file is reached in is or 
+if some other error occurs during the input operation.
+
+If the delimiter is found, it is extracted and discarded, 
+i.e. it is not stored and the next input operation will begin after it.
