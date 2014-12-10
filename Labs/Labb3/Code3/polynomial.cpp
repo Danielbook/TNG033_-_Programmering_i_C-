@@ -8,6 +8,12 @@
 #include <assert.h>
 
 //Constructor
+
+Polynomial::Polynomial()
+{
+    degree = 0;
+}
+
 Polynomial::Polynomial(int d, double *C)
 {
     degree = d;
@@ -43,7 +49,7 @@ Polynomial::Polynomial(const Polynomial& P)
 Polynomial::~Polynomial()
 {
     delete [] coef;
-    delete &degree;
+   // delete &degree;
 }
 
 void Polynomial::print(ostream& os)const
@@ -91,11 +97,11 @@ assert(index >= 0 || index <= degree); // assert: verifiera vettiga argument, sk
     return coef[index];
 }
 
-//Polynomial *Polynomial::clone() const
-//{
-//    Polynomial *newClone = new Polynomial(this->degree, this->coef);
-//    return newClone;
-//}
+Polynomial *Polynomial::clone() const
+{
+    Polynomial *newClone = new Polynomial(this->degree, this->coef);
+    return newClone;
+}
 
 double Polynomial::operator()(double d) const
 {
@@ -128,7 +134,6 @@ Polynomial operator+(const Polynomial& P1, const Polynomial& P2)
 
         if (i <= P2.degree)
             newCoef[i] += P2.coef[i];
-
         }
     return Polynomial(newDegree, newCoef);
 }

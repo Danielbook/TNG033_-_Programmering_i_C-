@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1417764064 source:c:\users\matthias\documents\medieteknik\tng033 - c++\labbar\labb3\code3\expression.cpp
+	"expression.h"
+	<cmath>
+
+1418116860 c:\users\matthias\documents\medieteknik\tng033 - c++\labbar\labb3\code3\expression.h
+	<iostream>
+
+1418118948 source:c:\users\matthias\documents\medieteknik\tng033 - c++\labbar\labb3\code3\logarithm.cpp
+	"logarithm.h"
+	"polynomial.h"
+	"math.h"
+
+1418118171 source:c:\users\matthias\documents\medieteknik\tng033 - c++\labbar\labb3\code3\polynomial.cpp
+	"polynomial.h"
+	<cmath>
+	<assert.h>
+
+1418119114 c:\users\matthias\documents\medieteknik\tng033 - c++\labbar\labb3\code3\polynomial.h
+	<iostream>
+	"expression.h"
+
+1418118895 source:c:\users\matthias\documents\medieteknik\tng033 - c++\labbar\labb3\code3\test.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	"polynomial.h"
+	"logarithm.h"
+
+1418117943 c:\users\matthias\documents\medieteknik\tng033 - c++\labbar\labb3\code3\logarithm.h
+	<iostream>
+	"expression.h"
+

@@ -126,87 +126,87 @@ int main()
     p4 = 0 + p4 + 3.3;
     cout << "p4 = " << p4 << endl << endl;
 
-//    /*****************************************************
-//    * TEST PHASE 7                                       *
-//    * Logarithm: constructors and operator<<             *
-//    ******************************************************/
-//    cout << "\nTEST PHASE 7\n";
-//
-//    Log l0; //default constructor
-//    Log l1(p3+2, 2, 3, 10);
-//    Log l2(l1); //copy constructor
-//
-//    cout << "l0 = " << l0 << endl;
-//    cout << "l1 = " << l1 << endl;
-//    cout << "l2 = " << l2 << endl;
-//
-//    /*****************************************************
-//    * TEST PHASE 8                                       *
-//    * Logarithm: assignment operator                     *
-//    ******************************************************/
-//    cout << "\nTEST PHASE 8\n";
-//
-//    Log l3(p4, 1, 1 , 2);
-//
-//    l2 = l0 = l3;
-//
-//    //test that memory is not shared between expressions
-//    p4[0] = 2;
-//
-//    cout << "p4 = " << p4 << endl;
-//    cout << "l0 = " << l0 << endl;
-//    cout << "l2 = " << l2 << endl;
-//    cout << "l3 = " << l3 << endl;
-//
-//    /*****************************************************
-//    * TEST PHASE 9                                       *
-//    * Logarithm: operator()                              *
-//    ******************************************************/
-//    cout << "\nTEST PHASE 9\n";
-//
-//    cout << "l1(1) = " << l1(1) << endl;
-//    cout << "l3(1) = " << l3(1) << endl;
-//
-//    /*****************************************************
-//    * TEST PHASE 10                                      *
-//    * Logarithm: isRoot                                  *
-//    ******************************************************/
-//    cout << "\nTEST PHASE 10\n";
-//
-//    const Log l4;
-//
-//    if (l4.isRoot(1))
-//        cout << "One is a root of " << l4 << endl;
-//    else
-//        cout << "One is not a root of " << l4 << endl;
-//
-//
-//    /*****************************************************
-//    * TEST PHASE 11                                      *
-//    * Expressions: dynamic binding                       *
-//    ******************************************************/
-//    cout << "\nTEST PHASE 11\n";
-//
-//    Polynomial p6(p4);
-//    Polynomial p7(p2);
-//
-//    Expression *E[4] = {&p6, &l1, &p7, &l0};
-//
-//    cout << "** evaluate " << endl;
-//    for(int i = 0; i < 4; i++)
-//    {
-//        cout << "(" << *E[i] << ")"
-//             << "(1) = " << (*E[i])(1) << endl;
-//    }
-//
-//    cout << "\n** isRoot " << endl;
-//    for(int i = 0; i < 4; i++)
-//    {
-//        if (E[i]->isRoot(1))
-//            cout << "1 is a root of " << *E[i] << endl;
-//        else
-//            cout << "1 is not a root of " << *E[i] << endl;
-//    }
+    /*****************************************************
+    * TEST PHASE 7                                       *
+    * Logarithm: constructors and operator<<             *
+    ******************************************************/
+    cout << "\nTEST PHASE 7\n";
+
+    Log l0; //default constructor
+    Log l1(p3+2, 2, 3, 10);
+    Log l2(l1); //copy constructor
+
+    cout << "l0 = " << l0 << endl;
+    cout << "l1 = " << l1 << endl;
+    cout << "l2 = " << l2 << endl;
+
+    /*****************************************************
+    * TEST PHASE 8                                       *
+    * Logarithm: assignment operator                     *
+    ******************************************************/
+    cout << "\nTEST PHASE 8\n";
+
+    Log l3(p4, 1, 1 , 2);
+
+    l2 = l0 = l3;
+
+    //test that memory is not shared between expressions
+    p4[0] = 2;
+
+    cout << "p4 = " << p4 << endl;
+    cout << "l0 = " << l0 << endl;
+    cout << "l2 = " << l2 << endl;
+    cout << "l3 = " << l3 << endl;
+
+    /*****************************************************
+    * TEST PHASE 9                                       *
+    * Logarithm: operator()                              *
+    ******************************************************/
+    cout << "\nTEST PHASE 9\n";
+
+    cout << "l1(1) = " << l1(1) << endl;
+    cout << "l3(1) = " << l3(1) << endl;
+
+    /*****************************************************
+    * TEST PHASE 10                                      *
+    * Logarithm: isRoot                                  *
+    ******************************************************/
+    cout << "\nTEST PHASE 10\n";
+
+    const Log l4;
+
+    if (l4.isRoot(1))
+        cout << "One is a root of " << l4 << endl;
+    else
+        cout << "One is not a root of " << l4 << endl;
+
+
+    /*****************************************************
+    * TEST PHASE 11                                      *
+    * Expressions: dynamic binding                       *
+    ******************************************************/
+    cout << "\nTEST PHASE 11\n";
+
+    Polynomial p6(p4);
+    Polynomial p7(p2);
+
+    Expression *E[4] = {&p6, &l1, &p7, &l0};
+
+    cout << "** evaluate " << endl;
+    for(int i = 0; i < 4; i++)
+    {
+        cout << "(" << *E[i] << ")"
+             << "(1) = " << (*E[i])(1) << endl;
+    }
+
+    cout << "\n** isRoot " << endl;
+    for(int i = 0; i < 4; i++)
+    {
+        if (E[i]->isRoot(1))
+            cout << "1 is a root of " << *E[i] << endl;
+        else
+            cout << "1 is not a root of " << *E[i] << endl;
+    }
 
 
     return 0;
