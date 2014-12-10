@@ -78,7 +78,7 @@
     double Polynomial::operator()(double d) const
     {
         double sum = 0;
-        for(int i = 0; i <= degree; i++)
+        for(int i = 0; i < degree + 1; i++)
         {
             sum += coef[i] * pow(d,i);
         }
@@ -104,7 +104,7 @@
         
         double* newCoef = new (nothrow) double[newDegree];
         
-        for(int i = 0; i <= newDegree; i++)
+        for(int i = 0; i < newDegree; i++)
         {
             newCoef[i] = 0;
             
@@ -127,7 +127,7 @@
     //Print function
     void Polynomial::print(ostream& os)const
     {
-        for(int i = 0; i <= degree; i++)
+        for(int i = 0; i < degree +1; i++)
         {
             if (coef[i] != 0)
             {
