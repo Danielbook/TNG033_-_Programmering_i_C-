@@ -104,7 +104,7 @@
         
         double* newCoef = new (nothrow) double[newDegree];
         
-        for(int i = 0; i < newDegree; i++)
+        for(int i = 0; i <= newDegree; i++)
         {
             newCoef[i] = 0;
             
