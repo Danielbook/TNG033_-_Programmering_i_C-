@@ -17,26 +17,21 @@ class Polynomial : public Expression{
 public:
 
     //Constructors
+    Polynomial();
     Polynomial(int d, double *C);
     Polynomial(double d);
+    Polynomial(const Polynomial& P); //Copy constructor
+    ~Polynomial();                         //Destructor
 
-    //Copy constructor
-    Polynomial(const Polynomial& P);
 
-    //Destructor
-    ~Polynomial();
-
-    //Assignment
-    const Polynomial& operator=(const Polynomial P);
-
-    //Evaluate
-    double operator()(double d) const;
+    const Polynomial& operator=(const Polynomial P);        //Assignment
+    double operator()(double d) const;                      //Evaluate
 
     friend Polynomial operator+(const Polynomial& P1, const Polynomial& P2);
 
     //operator[] coefficient...
     double& operator[](const int index);
-//    Polynomial* clone() const;
+    Polynomial* clone() const;
 
     void print(ostream &os)const;
 protected:

@@ -16,6 +16,7 @@ class Expression
 {
 public:
     //Abstract destructor
+
     virtual ~Expression(){};
 
     //Test if root
@@ -24,7 +25,7 @@ public:
     friend ostream& operator<<(ostream& os, const Expression& E);
 
     //Return a clone of the Expression
-//    virtual Expression* clone() = 0;
+    virtual Expression* clone() const = 0;
 
     //Evaluate
     virtual double operator()(double d) const = 0;
