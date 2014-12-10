@@ -31,3 +31,35 @@
 	<iostream>
 	"expression.h"
 
+1418202470 source:h:\tng033\tng033_-_programmering_i_c-\labs\labb3\code3\expression.cpp
+	"expression.h"
+	<cmath>
+
+1418202470 h:\tng033\tng033_-_programmering_i_c-\labs\labb3\code3\expression.h
+	<iostream>
+
+1418202470 source:h:\tng033\tng033_-_programmering_i_c-\labs\labb3\code3\logarithm.cpp
+	"logarithm.h"
+	"polynomial.h"
+	"math.h"
+
+1418202470 h:\tng033\tng033_-_programmering_i_c-\labs\labb3\code3\logarithm.h
+	<iostream>
+	"expression.h"
+
+1418202470 h:\tng033\tng033_-_programmering_i_c-\labs\labb3\code3\polynomial.h
+	<iostream>
+	"expression.h"
+
+1418204818 source:h:\tng033\tng033_-_programmering_i_c-\labs\labb3\code3\polynomial.cpp
+	"polynomial.h"
+	<cmath>
+	<assert.h>
+
+1418202470 source:h:\tng033\tng033_-_programmering_i_c-\labs\labb3\code3\test.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	"polynomial.h"
+	"logarithm.h"
+

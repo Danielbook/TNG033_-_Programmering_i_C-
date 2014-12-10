@@ -80,7 +80,6 @@ const Polynomial& Polynomial::operator=(const Polynomial P)
         //Replaces it with P
         coef = new (nothrow) double[P.degree+1];
         degree = P.degree;
-
         for (int i = 0; i < P.degree+1; i++)
         {
             coef[i] = P.coef[i];
@@ -122,7 +121,7 @@ Polynomial operator+(const Polynomial& P1, const Polynomial& P2)
         newDegree = P2.degree;
     }
 
-    double* newCoef = new (nothrow) double[newDegree];
+    double* newCoef = new (nothrow) double[newDegree+1];
 
         for(int i = 0; i <= newDegree; i++)
         {
