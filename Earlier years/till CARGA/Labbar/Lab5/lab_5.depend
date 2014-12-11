@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1386984734 source:c:\users\sprazer\desktop\lab_5\diver.cpp
+	"diver.h"
+	<algorithm>
+	<iterator>
+	<cstring>
+	<iomanip>
+	<cmath>
+
+1386984734 c:\users\sprazer\desktop\lab_5\diver.h
+	<iostream>
+	<string>
+	<list>
+
+1387001245 source:c:\users\sprazer\desktop\lab_5\main_lab5.cpp
+	<fstream>
+	<iostream>
+	<iomanip>
+	<sstream>
+	<string>
+	<cstring>
+	<vector>
+	<algorithm>
+	<map>
+	"diver.h"
+

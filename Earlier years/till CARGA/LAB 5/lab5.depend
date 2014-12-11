@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1387272392 source:h:\tng033\lab 5\diver.cpp
+	"diver.h"
+	<algorithm>
+	<iterator>
+	<cstring>
+	<iomanip>
+	<cmath>
+
+1386855654 h:\tng033\lab 5\diver.h
+	<iostream>
+	<string>
+	<list>
+
+1387275526 source:h:\tng033\lab 5\main_lab5.cpp
+	<fstream>
+	<iostream>
+	<iomanip>
+	<sstream>
+	<string>
+	<cstring>
+	<vector>
+	<algorithm>
+	<map>
+	"diver.h"
+
+1387272394 source:h:\kurser\tng033\lab 5\diver.cpp
+	"diver.h"
+	<algorithm>
+	<iterator>
+	<cstring>
+	<iomanip>
+	<cmath>
+
+1386855654 h:\kurser\tng033\lab 5\diver.h
+	<iostream>
+	<string>
+	<list>
+
+1387474040 source:h:\kurser\tng033\lab 5\main_lab5.cpp
+	<fstream>
+	<iostream>
+	<iomanip>
+	<sstream>
+	<string>
+	<cstring>
+	<vector>
+	<algorithm>
+	<map>
+	"diver.h"
+

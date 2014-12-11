@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1359139330 source:h:\kurser\tng033\labbar\lab2\code2\main.cpp
+	<iostream>
+	<iomanip>
+	"set.h"
+
+1385134995 h:\kurser\tng033\labbar\lab2\code2\set.h
+	"node.h"
+
+1383947096 h:\kurser\tng033\labbar\lab2\code2\node.h
+	<iostream>
+
+1383947112 source:h:\kurser\tng033\labbar\lab2\code2\node.cpp
+	"node.h"
+
+1383947294 source:h:\kurser\tng033\labbar\lab2\code2\set.cpp
+	"set.h"
+
