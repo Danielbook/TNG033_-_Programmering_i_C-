@@ -5,109 +5,111 @@
 #include <algorithm>
 #include <map>
 #include <iomanip>
+#include <iostream>
+#include <iterator>
 
 using namespace std;
 
-/******************************
- * 1. Variable declarations   *
- *******************************/
+string file_name = "/Users/Daniel/Skolarbeten/Nuvarande/TNG033-Programmering_i_C++/Labs/xCode Lab4/Lab4/Exercise1/uppgift1.txt";
+string file_out = "/Users/Daniel/Skolarbeten/Nuvarande/TNG033-Programmering_i_C++/Labs/xCode Lab4/Lab4/Exercise1/outfile.txt";
 
-string forbidden = ".,!?:\"();";
-ifstream in;
-ofstream os;
-
-map<string, int> mWords;
-vector<pair<int, string> > forSorting;
+ifstream in(file_name);
+ofstream os(file_out);
 
 /*******************************
- * 2. Functions declarations   *
+ * 1. Functions declarations   *
  *******************************/
+bool polishChar(char c);
 
-void transformWord(string &word);
+void display(pair<string, int> mWords);
+
+bool vectorSorting();
 
 /******************************
-* 3. Main function            *
+* 2. Main function            *
 ******************************/
 
 int main ()
 {
-    string file_name = "/Users/Daniel/Skolarbeten/Nuvarande/TNG033-Programmering_i_C++/Labs/xCode Lab4/Lab4/Exercise1/uppgift1.txt";
-    string file_out = "/Users/Daniel/Skolarbeten/Nuvarande/TNG033-Programmering_i_C++/Labs/xCode Lab4/Lab4/Exercise1/outfile.txt";
-    string word;
+    map<string, int> mWords;
     
-    int wordCounter = 0;
-    int uniqueWord = 0;
     
-    in.open(file_name);
-    os.open(file_out);
-    
-    while(in >> word >> ws){
-        transformWord(word);
-        mWords[word]++;
-        wordCounter++;
+    if ( !in )
+    {
+        cout << "Data file not found!!" << endl;
+        return 0;
     }
     
-    for(map<string, int>::iterator itr = mWords.begin(); itr != mWords.end(); ++itr){
-        uniqueWord++;
-    }
+    string word = "";
+    int howMany = 0;
     
-    os << "Number of words in the file = " << wordCounter << endl;
-    os << "Number unique  words in the file = " << uniqueWord << endl << endl << endl;
-    os << "Frequency table sorted alphabetically ..." << endl << endl;
-
-    for(map<string, int>::iterator itr = mWords.begin(); itr != mWords.end(); ++itr){
-        pair<int, string> pWord;
-        pWord.first = itr->second;
-        pWord.second = itr->first;
+    while ( in >> word >> ws ){
         
-        forSorting.push_back(pWord);
-        os << left << setw (20) << itr->first << setw (24) << itr->second << endl;
+        transform(word.begin(), word.end(), word.begin(), ::tolower); //Transform all to lowercase
+        
+        string newWord;
+        newWord.reserve(word.size());
+        
+        copy_if(word.begin(), word.end(), back_inserter(newWord), polishChar);    //Removes unwanted characters
+        
+        mWords[newWord]++;
+        
+        howMany++;
     }
     
-    os << endl << endl << "Frequency table sorted by frequence ..." << endl << endl;
+    os << "Number of words in the file = " << howMany << endl;
     
-    sort( forSorting.begin(), forSorting.end() );
-    reverse(forSorting.begin(), forSorting.end() );
+    os << "Number unique  words in the file = " << distance(mWords.begin(), mWords.end()) << endl;
     
-    for(vector<pair<int, string>>::iterator itr = forSorting.begin(); itr != forSorting.end(); ++itr){
-        os << left << setw (20) << itr->second << setw (24) << itr->first << endl;
-    }
-
-    in.close();
-    os.close();
+    os << endl << "Frequency table sorted alphabetically ..." << endl << endl;
+    
+    for_each(mWords.begin(), mWords.end(), display);
+    
+    os << endl << "Frequency table sorted by frequence ..." << endl << endl;
+    
+    vector<pair<string, int> > frequency(mWords.size());
+    
+    copy(mWords.begin(), mWords.end(), frequency.begin());
+    
+    sort(frequency.begin(), frequency.end(), vectorSorting);
+    
+    reverse(frequency.begin(), frequency.end());
+    
+    for_each(frequency.begin(), frequency.end(), display);
     
     return 0;
 }
 
 
 /*************************************
-* 4. Function definitions            *
+* 3. Function definitions            *
 **************************************/
 
-void transformWord(string &word){
-    
-    string newWord = "";
-    
-    bool rubbishFound;
-    
-    for(int i = 0; i < word.length(); i++) { //Loop the whole word
-        
-        rubbishFound = false; //Assume the word doesnt contain the forbidden characters
-        
-        word[i] = tolower( word[i] ); //Lower the case of the letter
-        
-        for(int k = 0; k < forbidden.length(); k++) { //Loop the letter
-            
-            if(word[i] == forbidden[k]){
-                
-                rubbishFound = true;
-            }
-        }
-        
-        if(!rubbishFound)
-            newWord += word[i];
-    }
-    word = newWord; //Passes it by reference
+void display(pair<string, int> mWords)
+{
+    os << left << setw (20) << mWords.first << setw (24) << mWords.second << endl;
 }
+
+bool vectorSorting(pair<string, int> i, pair<string, int> j){
+    if(i.second > j.second)
+    {
+        return false;
+    }
+    return true;
+}
+
+bool polishChar(char c){
+    string punctuations = ".,!?:\"();";
+    
+    std::string::iterator it;
+
+    it = find(punctuations.begin(), punctuations.end(), c);
+    
+    if (it != punctuations.end())
+        return false;
+    
+    return true;
+}
+
 
 
