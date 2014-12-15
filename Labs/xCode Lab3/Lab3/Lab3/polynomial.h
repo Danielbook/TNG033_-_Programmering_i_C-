@@ -15,7 +15,7 @@ using namespace std;
 
 class Polynomial : public Expression{
 public:
-////CONSTRUCTORS
+//// CONSTRUCTORS
     Polynomial(); //Default constructor, måste vara med, annars är klassen abstract!
     Polynomial(int d, double *C);
     Polynomial(double d);

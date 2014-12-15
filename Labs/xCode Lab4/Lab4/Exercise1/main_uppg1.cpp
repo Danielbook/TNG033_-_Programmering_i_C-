@@ -23,7 +23,7 @@ bool polishChar(char c);
 
 void display(pair<string, int> mWords);
 
-bool vectorSorting();
+bool vectorSorting(pair<string, int> p1, pair<string, int> p2);
 
 /******************************
 * 2. Main function            *
@@ -90,8 +90,8 @@ void display(pair<string, int> mWords)
     os << left << setw (20) << mWords.first << setw (24) << mWords.second << endl;
 }
 
-bool vectorSorting(pair<string, int> i, pair<string, int> j){
-    if(i.second > j.second)
+bool vectorSorting(pair<string, int> p1, pair<string, int> p2){
+    if(p1.second > p2.second)
     {
         return false;
     }
