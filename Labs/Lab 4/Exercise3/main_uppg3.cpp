@@ -10,8 +10,8 @@
 
 using namespace std;
 
-string file_name = "/Users/Daniel/Skolarbeten/Nuvarande/TNG033-Programmering_i_C++/Labs/xCode Lab4/Lab4/Exercise2/uppgift2_kort.txt";
-string file_out = "/Users/Daniel/Skolarbeten/Nuvarande/TNG033-Programmering_i_C++/Labs/xCode Lab4/Lab4/Exercise2/outfile.txt";
+string file_name = "uppgift3.txt";
+string file_out = "outfile.txt";
 
 ifstream in(file_name);
 ofstream os(file_out);
@@ -26,6 +26,8 @@ void display(pair<string, int> subjects);
 
 void displayString(string word);
 
+bool sortByNumber(pair<string, anagrams> p1, pair<string, anagrams> p2);
+
 bool compareWord(pair<string, int> s1, pair<string, int> s2);
 
 bool compareChar(char C, string word);
@@ -37,56 +39,59 @@ bool compareChar(char C, string word);
 int main()
 {
     map<string, anagrams> subjects;
-    map<string, anagrams>::iterator it;
+    vector<pair<string, anagrams>>::iterator it;
     string word;
     int howMany = 0;
-    
+
     if ( !in )
     {
         cout << "Data file not found!!" << endl;
         return 0;
     }
-    
+
     while(in >> word)
     {
         transform(word.begin(), word.end(), word.begin(), ::tolower); //Transform all to lowercase
-        
+
         string str = word; //Copy the string
-        
+
         sort(str.begin(), str.end()); //Sort the new string alphabetically
-        
+
         subjects[str].push_back(word);
-        
+
         howMany++;
     }
-    
+
     os << "Number of words = " << howMany << endl;
-    os << endl << "-- ANAGRAMS --" << endl;
-    
-    vector<pair<string, anagrams> > forDisplay(subjects.size());
-    
-    copy(subjects.begin(), subjects.end(), forDisplay.begin());
-    
-    //for_each(subjects.begin(), subjects.end(), display);
-    
-    for (it = subjects.begin(); it!= subjects.end(); it++)
+    os << endl << "--ANAGRAMS--" << endl;
+
+    vector< pair<string, anagrams> > forSorting(subjects.size());
+
+    copy(subjects.begin(), subjects.end(), forSorting.begin());
+
+    sort(forSorting.begin(), forSorting.end(), sortByNumber);
+
+    //for_each(forSorting.begin(), forSorting.end(), display);
+
+    for (it = forSorting.begin(); it!= forSorting.end(); it++)
     {
-        if(it->second.size()!= 1)
+        for(vector<string>::const_iterator i = it->second.begin(); i != it->second.end(); ++i)
         {
-            for(vector<string>::const_iterator i = it->second.begin(); i != it->second.end(); ++i)
-            {
-                os <<  *i << " ";
-            }
-            os << " --> " << it->second.size() << " words." << endl;
+            os <<  *i << " ";
         }
+        os << " --> " << it->second.size() << " words." << endl;
     }
-    
     return 0;
 }
 
 /******************************
  * 3. Function definitions    *
  ******************************/
+bool sortByNumber(pair<string, anagrams> p1, pair<string, anagrams> p2)
+{
+    return ( p1.second.size() > p2.second.size() );
+}
+
 void display(pair<string, anagrams> subjects)
 {
     if(subjects.second.size()!= 1)
@@ -100,7 +105,3 @@ void displayString(string word)
 {
     os << word << ", "<< endl;
 }
-
-
-
-

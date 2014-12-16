@@ -74,6 +74,7 @@
 		659FC1A21A384E6F009C74D0 /* uppgift3_kort.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uppgift3_kort.txt; sourceTree = "<group>"; };
 		659FC1A31A384E6F009C74D0 /* uppgift3_out.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uppgift3_out.txt; sourceTree = "<group>"; };
 		659FC1A41A384E6F009C74D0 /* uppgift3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uppgift3.txt; sourceTree = "<group>"; };
+		65A59D3E1A4053AA00481CCF /* outfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = outfile.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +160,7 @@
 		659FC1931A384E26009C74D0 /* Exercise3 */ = {
 			isa = PBXGroup;
 			children = (
+				65A59D3E1A4053AA00481CCF /* outfile.txt */,
 				6568030A1A38D81800353330 /* main_uppg3.cpp */,
 				659FC1A11A384E6F009C74D0 /* uppgift3_kort_out.txt */,
 				659FC1A21A384E6F009C74D0 /* uppgift3_kort.txt */,
