@@ -28,11 +28,9 @@ bool vectorSorting(pair<string, int> p1, pair<string, int> p2);
 /******************************
 * 2. Main function            *
 ******************************/
-
 int main ()
 {
     map<string, int> mWords;
-    
     
     if ( !in )
     {
@@ -50,7 +48,7 @@ int main ()
         string newWord;
         newWord.reserve(word.size());
         
-        copy_if(word.begin(), word.end(), back_inserter(newWord), polishChar);    //Removes unwanted characters
+        copy_if(word.begin(), word.end(), back_inserter(newWord), polishChar); //Removes unwanted characters
         
         mWords[newWord]++;
         
@@ -73,18 +71,14 @@ int main ()
     
     sort(frequency.begin(), frequency.end(), vectorSorting);
     
-    reverse(frequency.begin(), frequency.end());
-    
     for_each(frequency.begin(), frequency.end(), display);
     
     return 0;
 }
 
-
 /*************************************
 * 3. Function definitions            *
 **************************************/
-
 void display(pair<string, int> mWords)
 {
     os << left << setw (20) << mWords.first << setw (24) << mWords.second << endl;
@@ -93,9 +87,9 @@ void display(pair<string, int> mWords)
 bool vectorSorting(pair<string, int> p1, pair<string, int> p2){
     if(p1.second > p2.second)
     {
-        return false;
+        return true;
     }
-    return true;
+    return false;
 }
 
 bool polishChar(char c){

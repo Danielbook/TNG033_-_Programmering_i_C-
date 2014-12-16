@@ -57,6 +57,7 @@
 		6568030A1A38D81800353330 /* main_uppg3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_uppg3.cpp; sourceTree = "<group>"; };
 		6568030D1A39874500353330 /* outfile_kort.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = outfile_kort.txt; sourceTree = "<group>"; };
 		6568030E1A3994FE00353330 /* outfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = outfile.txt; sourceTree = "<group>"; };
+		6581C0F21A3F6CDE0037E485 /* outfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = outfile.txt; sourceTree = "<group>"; };
 		659FC16E1A384D7A009C74D0 /* Lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab4; sourceTree = BUILT_PRODUCTS_DIR; };
 		659FC17C1A384E14009C74D0 /* Exercise1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Exercise1; sourceTree = BUILT_PRODUCTS_DIR; };
 		659FC1871A384E1D009C74D0 /* Exercise2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Exercise2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +146,7 @@
 		659FC1881A384E1D009C74D0 /* Exercise2 */ = {
 			isa = PBXGroup;
 			children = (
+				6581C0F21A3F6CDE0037E485 /* outfile.txt */,
 				656803081A38D81100353330 /* main_uppg2.cpp */,
 				659FC19D1A384E5F009C74D0 /* uppgift2_kort_out.txt */,
 				659FC19E1A384E5F009C74D0 /* uppgift2_kort.txt */,

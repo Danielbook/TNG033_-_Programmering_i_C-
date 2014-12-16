@@ -1,0 +1,26 @@
+Number of words: 22
+
+--ANAGRAMS--
+
+compiler            1                       
+complier            1                       
+dennis              1                       
+dreaming            1                       
+earls               1                       
+hist                1                       
+hits                1                       
+kale                1                       
+kitchen             1                       
+lake                1                       
+lares               1                       
+laser               1                       
+leak                1                       
+margined            1                       
+midrange            1                       
+rales               1                       
+reals               1                       
+seral               1                       
+shit                1                       
+thicken             1                       
+this                1                       
+wines               1                       
