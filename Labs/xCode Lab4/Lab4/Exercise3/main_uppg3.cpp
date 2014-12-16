@@ -22,7 +22,7 @@ ofstream os(file_out);
 
 typedef vector<string> anagrams;
 
-void display(pair<string, int> subjects);
+void display(pair<string, anagrams> pairToDisplay);
 
 void displayString(string word);
 
@@ -71,16 +71,8 @@ int main()
     
     sort(forSorting.begin(), forSorting.end(), sortByNumber);
 
-    //for_each(forSorting.begin(), forSorting.end(), display);
+    for_each(forSorting.begin(), forSorting.end(), display);
     
-    for (it = forSorting.begin(); it!= forSorting.end(); it++)
-    {
-        for(vector<string>::const_iterator i = it->second.begin(); i != it->second.end(); ++i)
-        {
-            os <<  *i << " ";
-        }
-        os << " --> " << it->second.size() << " words." << endl;
-    }
     return 0;
 }
 
@@ -92,18 +84,18 @@ bool sortByNumber(pair<string, anagrams> p1, pair<string, anagrams> p2)
     return ( p1.second.size() > p2.second.size() );
 }
 
-void display(pair<string, anagrams> subjects)
+void display(pair<string, anagrams> pairToDisplay)
 {
-    if(subjects.second.size()!= 1)
+    if(pairToDisplay.second.size()!= 1)
     {
-        for_each(subjects.second.begin(), subjects.second.end(), displayString);
-        os << " --> " << subjects.second.size() << " words." << endl;
+        for_each(pairToDisplay.second.begin(), pairToDisplay.second.end(), displayString);
+        os << " --> " << pairToDisplay.second.size() << " words." << endl;
     }
 }
 
 void displayString(string word)
 {
-    os << word << ", "<< endl;
+    os << word << " ";
 }
 
 
