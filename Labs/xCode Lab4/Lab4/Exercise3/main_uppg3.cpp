@@ -19,18 +19,26 @@ ofstream os(file_out);
 /******************************
  * 1. Functions declarations  *
  ******************************/
-
 typedef vector<string> anagrams;
-
-void display(pair<string, anagrams> pairToDisplay);
-
-void displayString(string word);
+typedef map<string, anagrams> anagramMap;
+typedef pair<string, anagrams> displayPair;
 
 bool sortByNumber(pair<string, anagrams> p1, pair<string, anagrams> p2);
 
-bool compareWord(pair<string, int> s1, pair<string, int> s2);
+namespace std
+{
+    ostream& operator<<(ostream& os, const displayPair &dP)
+    {
+        if(dP.second.size() > 1)
+        {
+            ostream_iterator<string> out_it(os, " ");
+            copy(dP.second.begin(), dP.second.end(), out_it);
+            os << " --> " << dP.second.size() << " words." << endl;
+        }
+        return os;
+    }
+}
 
-bool compareChar(char C, string word);
 
 /******************************
  * 2. Main function           *
@@ -38,8 +46,7 @@ bool compareChar(char C, string word);
 
 int main()
 {
-    map<string, anagrams> subjects;
-    vector<pair<string, anagrams>>::iterator it;
+    anagramMap subjects;
     string word;
     int howMany = 0;
     
@@ -65,14 +72,16 @@ int main()
     os << "Number of words = " << howMany << endl;
     os << endl << "--ANAGRAMS--" << endl;
     
-    vector< pair<string, anagrams> > forSorting(subjects.size());
+    vector<displayPair> forSorting(subjects.size());
     
     copy(subjects.begin(), subjects.end(), forSorting.begin());
     
     sort(forSorting.begin(), forSorting.end(), sortByNumber);
-
-    for_each(forSorting.begin(), forSorting.end(), display);
     
+    ostream_iterator<displayPair> out_it(os);
+    
+    copy(forSorting.begin(), forSorting.end(), out_it);
+
     return 0;
 }
 
@@ -84,19 +93,7 @@ bool sortByNumber(pair<string, anagrams> p1, pair<string, anagrams> p2)
     return ( p1.second.size() > p2.second.size() );
 }
 
-void display(pair<string, anagrams> pairToDisplay)
-{
-    if(pairToDisplay.second.size()!= 1)
-    {
-        for_each(pairToDisplay.second.begin(), pairToDisplay.second.end(), displayString);
-        os << " --> " << pairToDisplay.second.size() << " words." << endl;
-    }
-}
 
-void displayString(string word)
-{
-    os << word << " ";
-}
 
 
 

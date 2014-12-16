@@ -13,37 +13,19 @@ using namespace std;
  * 1. Functions declarations  *
  ******************************/
 typedef vector<string> anagrams;
-typedef map<string, anagrams> mSub;
-
-void display(pair<string, anagrams> subjects);
-
-void displayString(string word);
-
-bool compareWord(pair<string, int> s1, pair<string, int> s2);
-
-bool compareChar(char C, string word);
+typedef map<string, anagrams> anagramMap;
+typedef pair<string, anagrams> displayPair;
 
 namespace std
 {
-    ostream& operator<<(ostream& os, const mSub &M)
+    ostream& operator<<(ostream& os, const displayPair &dP)
     {
-        ostream_iterator<anagrams> out_it(os);
-        copy(M.begin(), M.end(), out_it);
-        
-        return os;
-    }
-    
-    ostream& operator<<(ostream& os, const anagrams &A)
-    {
-        if(A.size() != 1)
+        if(dP.second.size() > 1)
         {
-            ostream_iterator<string> out_it(os," ");
-            
-            copy(A.begin(), A.end(), out_it);
-            
-            cout << " --> " << A.size() << " words." << endl;
+            ostream_iterator<string> out_it(os, " ");
+            copy(dP.second.begin(), dP.second.end(), out_it);
+            os << " --> " << dP.second.size() << " words." << endl;
         }
-        
         return os;
     }
 }
@@ -60,8 +42,8 @@ int main()
     ifstream in(file_name);
     ofstream os(file_out);
 
-    mSub subjects;
-    mSub::iterator it;
+    anagramMap subjects;
+    anagramMap::iterator it;
     string word;
     int howMany = 0;
     
@@ -84,40 +66,18 @@ int main()
         howMany++;
     }
     
-    cout << "Number of words = " << howMany << endl;
-    cout << endl << "-- ANAGRAMS --" << endl;
+    os << "Number of words = " << howMany << endl;
+    os << endl << "-- ANAGRAMS --" << endl;
     
-    //for_each(subjects.begin(), subjects.end(), display);
+    vector<displayPair> toDisplay(subjects.size());
     
-    ostream_iterator<mSub> out_it(os);
+    copy(subjects.begin(), subjects.end(), toDisplay.begin());
     
-    copy(subjects.begin(), subjects.end(), out_it);
+    ostream_iterator<displayPair> out_it(os);
+    
+    copy(toDisplay.begin(), toDisplay.end(), out_it);
     
     return 0;
 }
-
-/******************************
- * 3. Function definitions    *
- ******************************/
-//void display(pair<string, anagrams> p1)
-//{
-//    if(p1.second.size()!= 1)
-//    {
-//        for_each(p1.second.begin(), p1.second.end(), displayString);
-//        cout << " --> " << p1.second.size() << " words." << endl;
-//    }
-//}
-//
-//void displayString(string word)
-//{
-//    cout << word << " ";
-//}
-
-//ostream& operator<<(ostream& os, const map<string, anagrams> &M)
-//{
-//    return os;
-//}
-
-
 
 

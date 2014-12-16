@@ -71,10 +71,13 @@ int main ()
     os << endl << "Frequency table sorted alphabetically ..." << endl << endl;
     
     //for_each(mWords.begin(), mWords.end(), display);
+    ostream_iterator<pDisplay> out_one(os);
+    
+    copy(mWords.begin(), mWords.end(), out_one);
     
     os << endl << "Frequency table sorted by frequence ..." << endl << endl;
     
-    vector<pair<string, int> > frequency(mWords.size());
+    vector<pDisplay> frequency(mWords.size());
     
     copy(mWords.begin(), mWords.end(), frequency.begin());
     
